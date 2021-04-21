@@ -25,5 +25,16 @@ SWAGGER_BLUEPRINT = get_swaggerui_blueprint(
 
 app.register_blueprint(SWAGGER_BLUEPRINT, url_prefix=SWAGGER_URL)
 
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    return render_template('index.html')
+
+@app.route('/greeting', methods=['POST'])
+def greeteng():
+    name=request.form.get('name')
+    if not name:
+        return 'Please, enter a value', 400
+    return render_template('greeting.html', name=name)
+
 from . import routes, models
 #from src import routes

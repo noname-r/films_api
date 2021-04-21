@@ -62,6 +62,7 @@
     <Folder Include="migrations\versions\__pycache__\" />
     <Folder Include="migrations\__pycache__\" />
     <Folder Include="src\" />
+    <Folder Include="src\templates\" />
     <Folder Include="src\static\" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +99,7 @@
     <Content Include="films_api\templates\index.html" />
     <Content Include="films_api\templates\layout.html" />
     <Content Include="src\static\swagger.json" />
+    <Content Include="src\templates\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
