@@ -36,13 +36,19 @@
     <Compile Include="runserver.py" />
     <Compile Include="films_api\__init__.py" />
     <Compile Include="films_api\views.py" />
-    <Compile Include="src\inserts.py" />
-    <Compile Include="src\models.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="src\database\inserts.py" />
+    <Compile Include="src\database\models.py" />
+    <Compile Include="src\database\queries.py" />
+    <Compile Include="src\database\__init__.py" />
+    <Compile Include="src\resources\actors.py" />
+    <Compile Include="src\resources\aggregations.py" />
+    <Compile Include="src\resources\films.py" />
+    <Compile Include="src\resources\smoke.py" />
     <Compile Include="src\routes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\schemas\actors.py" />
+    <Compile Include="src\schemas\films.py" />
     <Compile Include="src\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Folder Include="migrations\versions\__pycache__\" />
     <Folder Include="migrations\__pycache__\" />
     <Folder Include="src\" />
+    <Folder Include="src\database\" />
+    <Folder Include="src\resources\" />
+    <Folder Include="src\schemas\" />
     <Folder Include="src\templates\" />
     <Folder Include="src\static\" />
   </ItemGroup>
@@ -99,6 +108,7 @@
     <Content Include="films_api\templates\index.html" />
     <Content Include="films_api\templates\layout.html" />
     <Content Include="src\static\swagger.json" />
+    <Content Include="src\templates\greeting.html" />
     <Content Include="src\templates\index.html" />
   </ItemGroup>
   <ItemGroup>

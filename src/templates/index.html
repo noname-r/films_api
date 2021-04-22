@@ -9,7 +9,7 @@
     <h1>Form validation</h1>
     <form action="{{ url_for('greeting') }}" method="post">
         <label>
-            <input type="text" name="name" placeholder="Enter your name" />
+            <input type="text" name="name" placeholder="Enter your name" required/>
         </label>
         <button>Submit</button>
     </form>
